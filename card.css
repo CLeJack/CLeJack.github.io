@@ -1,0 +1,65 @@
+.card {
+    background-color: var(--card-background);
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: black;
+    border-style: solid;
+    min-height: 100%;
+}
+
+.card__header {
+    text-align: center;
+}
+
+.card > hr {
+    background-color: black;
+    height: 1px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.card.skill > .card__body {
+    float: left;
+    word-wrap: break-word;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.inactive {
+    color: var(--grey-text);
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.card.job {
+    display: flex;
+
+    padding-top: 5px;
+    padding-bottom: 7px;
+
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
+
+.card.job > .card__header {
+    flex:1;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    max-width:40%;
+}
+
+.card.job > .card__separator {
+    min-height: 100%;
+    max-height: 100vh;
+    width: 1px;
+    background-color: black;
+}
+
+.card.job > .card__body {
+    max-width:59%;
+    flex: 1;
+    border-left-color: black;
+    border-left-width: 2px;
+    border-left-style: solid;
+}
